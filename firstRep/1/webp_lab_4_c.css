@@ -1,0 +1,45 @@
+body {
+	padding: 50px;	
+}
+
+
+
+.tabbed > input {
+	opacity: 0;
+}
+
+.tabbed > label {
+	padding: 5px;
+	margin-left: -25px;
+	border: 1px solid black;
+}
+
+.tabbed > label:hover {
+	background: grey;
+}
+
+.tabbed > input:checked + label {
+	background-color: black;
+	color: white;
+}
+
+.tabs > div {
+	margin-top: 20px;
+	position: absolute;
+	opacity: 0;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+
+#tabLabel1:checked ~ .tabs > div:nth-child(1),
+#tabLabel2:checked ~ .tabs > div:nth-child(2){
+	left: 0;
+	opacity: 1;
+	position: relative;
+  	top: 0px;
+}
+
+
